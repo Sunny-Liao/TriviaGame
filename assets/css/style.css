@@ -1,0 +1,61 @@
+body {
+background-image: url(http://www.cndajin.com/data/wls/33/6120245.png);
+background-repeat: no-repeat;
+background-size: 100% 120%;
+}
+
+h1 {
+    text-align:center;
+    font-size: 170px;
+    margin-top:15px;
+    color: crimson;
+}
+
+#startBtn {
+    width: 250px;
+    height:250px;
+    margin-left:450px;
+    margin-right:250px;
+
+}
+
+.timeRemaining {
+    margin-left:350px;
+    font-size: 50px;
+}
+
+#timer {
+
+}
+
+.questions {
+    font-size: 30px;
+    margin-left:300px;
+    text-align: center;
+}
+
+#choice {
+    text-align: center;
+    width: 5px;
+}
+
+#submit {
+    margin-left:580px;
+}
+
+h2, #correctScreen, #wrongScreen {
+    text-align: center;
+    margin-left: 50px;
+}
+
+input[type="radio"] {
+    margin-right:15px;
+}
+
+
+
+
+
+
+
+ 
