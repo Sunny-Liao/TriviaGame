@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Trivia Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1><strong>Avengers</strong></h1>
+        </div>
+
+        <input type="image" id="startBtn" src="assets/images/start.jpg" value="click me"/>
+
+        <div class="row">
+            <div class="col-md-12">
+            <div class="timeRemaining">
+                <p>Time Remaining:
+                    <span id="timer"></span>
+            </div>
+        </div>
+
+         
+
+        <br>
+        
+
+        <div class="row">
+            <div class="col-md-12"></div>
+            <div class="questions">
+                What is the name of Black Panther's home?
+                </br>
+                <input id="choice1" type="radio" name="firstQuestion" value="false"><small>K'un Lun</small>
+                <input id="choice2" type="radio" name="firstQuestion" value="true"><small>Wakanda</small>
+                <input id="choice3" type="radio" name="firstQuestion" value="false"><small>Kamar Taj</small>
+                <br>
+                <br>
+                How did Dr Strange defeat Dormammu?</br>
+                <input id="choice4" type="radio" name="secondQuestion" value="false"><small>Built An Energy Prison</small></input>
+                <input id="choice5" type="radio" name="secondQuestion" value="true"><small>Create a Time Loop</small></input>
+                <input id="choice6" type="radio" name="secondQuestion" value="false"><small>Froze Time</small></input>
+                <br>
+                <br>
+                Which hero secretly has a family?</br>
+                <input id="choice7" type="radio" name="thirdQuestion" value="true"><small>Hawkeye</small></input>
+                <input id="choice8" type="radio" name="thirdQuestion" value="false"><small>Black Widow</small></input>
+                <input id="choice9" type="radio" name="thirdQuestion" value="false"><small>Bruce Banner</small></input>
+                <br>
+                <br>
+                What is it Hulk does?</br>
+                <input id="choice10" type="radio" name="fourthQuestion" value="true"><small>Smash</small></input>
+                <input id="choice11" type="radio" name="fourthQuestion" value="false"><small>Crash</small></input>
+                <input id="choice12" type="radio" name="fourthQuestion" value="false"><small>Thrash</small></input>
+                <br>
+                <br>
+                What weapon does Captain America use?</br>
+                <input id="choice13" type="radio" name="fifthQuestion" value="false"><small>A Spear</small></input>
+                <input id="choice14" type="radio" name="fifthQuestion" value="true"><small>A Shield</small></input>
+                <input id="choice15" type="radio" name="fifthQuestion" value="false"><small>A Lasso</small></input>
+                <br>
+                <br>
+                Which organ of Tony Stark's is damaged?</br>
+                <input id="choice16" type="radio" name="sixthQuestion" value="true"><small>Heart</small></input>
+                <input id="choice17" type="radio" name="sixthQuestion" value="false"><small>Brain</small></input>
+                <input id="choice18" type="radio" name="sixthQuestion" value="false"><small>Lung</small></input>
+                <br>
+                <br>
+                Where is Black Widow from?</br>
+                <input id="choice19" type="radio" name="seventhQuestion" value="false"><small>France</small></input>
+                <input id="choice20" type="radio" name="seventhQuestion" value="false"><small>Latveria</small></input>
+                <input id="choice21" type="radio" name="seventhQuestion" value="true"><small>Russia</small></input>
+                <br>
+                <br>
+                What agency does Nick Fury run?</br>
+                <input id="choice22" type="radio" name="eighthQuestion" value="false"><small>S.W.O.R.D.</small></input>
+                <input id="choice23" type="radio" name="eighthQuestion" value="false"><small>S.P.E.A.R.</small></input>
+                <input id="choice24" type="radio" name="eighthQuestion" value="true"><small>S.H.I.E.L.D.</small></input>
+                <br>
+                <br>
+                Where did the Hulk go at the end of Age of Ultron?</br>
+                <input id="choice25" type="radio" name="ninethQuestion" value="true"><small>Space</small></input>
+                <input id="choice26" type="radio" name="ninethQuestion" value="false"><small>India</small></input>
+                <input id="choice27" type="radio" name="ninethQuestion" value="false"><small>Brazil</small></input>
+                <br>
+                <br>
+                Which alien race invaded New York in The Avengers?</br>
+                <input id="choice28" type="radio" name="tenthQuestion" value="false"><small>Kree</small></input>
+                <input id="choice29" type="radio" name="tenthQuestion" value="false"><small>Skrulls</small></input>
+                <input id="choice30" type="radio" name="tenthQuestion" value="true"><small>Chitauri</small></input>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-5"></div>
+                <input type="button" id="submit" value="Submit" onclick="submitted()"/>
+            </div>
+
+            
+        </div>
+        <br>
+        div class="row">
+            <div class="col-md-12">
+                <div id="answerScreen">
+                <div class="splashBox2">
+                    <h2>Let's see how you did</h2>
+                <hr/>
+                    <p id="correctScreen">Correct Answers: 
+                        <span id="correctScore"></span>
+                    </p>
+
+                    <p id="firstPara" style="font-size: 20; color: red;margin-left: 60%;"></p>
+                    <p id="wrongScreen">Wrong Answers: 
+                        <span id="wrongScore"></span>
+                    </p>
+                    <p id="secondPara" style="font-size: 20; color: red; margin-left: 60%;"></p> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+    </div>
+</body>
+</html>
+
