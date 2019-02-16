@@ -21,13 +21,14 @@ $(document).ready(function() {
             clearInterval(timer);
             return;
         }
+    
         function pad(value) {
-            return(value < 10?'0':"") + value;
+        return(value < 10?'0':"") + value;
         }
+        
         $("#timer").text(Math.floor(time/60)+':' + pad(time%60));
         time--;
-
-    }
+        }
 
             var firstQuestion = document.getElementsByName("firstQuestion");
             var secondQuestion = document.getElementsByName("secondQuestion");
@@ -56,6 +57,8 @@ $(document).ready(function() {
 
             function submitted() {
             //for(var i = 0; i < myArr.length; i++) {
+                clearInterval(timer);
+                    
                 for(var o = 0; o < firstQuestion.length; o++) {
                     var num = o+1;
                     var name= "choice" + num ;
